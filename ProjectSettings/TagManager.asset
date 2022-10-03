@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Flesh
+  - Water
+  - Wood
   layers:
   - Default
   - TransparentFX
@@ -13,6 +16,18 @@ TagManager:
   - UI
   - 
   - 
+  - Zombie
+  - Interact
+  - BodyPart
+  - PlayerBody
+  - PlayerInvisible
+  - PostProcessing Main
+  - PostProcessing Arms
+  - CamExamination
+  - CamWeapon
+  - Ladder
+  - CamSecondExamination
+  - Threat
   - 
   - 
   - 
@@ -23,20 +38,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - POLARIS RAYCAST
+  - POLARIS SPLINE
   m_SortingLayers:
   - name: Default
     uniqueID: 0
