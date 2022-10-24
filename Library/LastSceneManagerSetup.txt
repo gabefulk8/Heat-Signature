@@ -1,5 +1,3 @@
-sceneSetups:
-- path: Assets/Scenes/Snow Map.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
+version https://git-lfs.github.com/spec/v1
+oid sha256:95c6b7039f81d431cb30620ae4caac68c0e2b90cd664600635f97f105455f8f0
+size 94
