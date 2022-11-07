@@ -1,22 +1,3 @@
-fileFormatVersion: 2
-guid: 8a77bc9f93d77fb47a00a0cc52d7ae03
-TrueTypeFontImporter:
-  externalObjects: {}
-  serializedVersion: 4
-  fontSize: 100
-  forceTextureCase: -1
-  characterSpacing: 0
-  characterPadding: 1
-  includeFontData: 1
-  fontName: Teko Medium
-  fontNames:
-  - Teko Medium
-  fallbackFontReferences: []
-  customCharacters: 
-  fontRenderingMode: 0
-  ascentCalculationMode: 1
-  useLegacyBoundsCalculation: 0
-  shouldRoundAdvanceValue: 1
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:b5325483475b86a082db9159ebafc8813c8828630edc826f0ac44fe72906edfa
+size 501

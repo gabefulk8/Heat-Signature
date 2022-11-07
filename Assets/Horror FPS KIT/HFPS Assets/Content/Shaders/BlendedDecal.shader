@@ -1,28 +1,3 @@
-Shader "BlendedDecal"
-
-{
-    Properties
-    {
-        _Color ("Tint", Color) = (1,1,1,1)
-        _MainTex ("Texture", 2D) = "white" {}
-    }
-   
-    SubShader
-    {
-        Lighting Off
-        ZTest LEqual
-        ZWrite Off
-        Tags {"Queue" = "Transparent"}
-        Pass
-        {
-            Alphatest Greater 0
-            Blend SrcAlpha OneMinusSrcAlpha
-            Offset -1, -1
-            SetTexture [_MainTex]
-            {
-                ConstantColor[_Color]
-                Combine texture * constant
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2c50a0c5462b1cd54783b2c99892d951be0780930bf55d472c59aa2a06ef9e02
+size 551

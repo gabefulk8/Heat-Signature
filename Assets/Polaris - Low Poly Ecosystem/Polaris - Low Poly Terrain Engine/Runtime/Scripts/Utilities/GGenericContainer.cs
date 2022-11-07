@@ -1,16 +1,3 @@
-#if GRIFFIN
-using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-
-namespace Pinwheel.Griffin
-{
-    //[CreateAssetMenu(menuName = "Griffin/Generic Container")]
-    public class GGenericContainer : ScriptableObject
-    {
-        public void Reset()
-        {
-        }
-    }
-}
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:cc818c6c561526b144d629ba54398b429f35452a8cb707721e53121c80aa19ed
+size 324

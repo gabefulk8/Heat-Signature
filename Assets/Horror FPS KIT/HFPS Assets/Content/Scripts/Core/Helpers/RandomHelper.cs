@@ -1,31 +1,3 @@
-﻿using System;
-using System.Linq;
-using System.Collections.Generic;
-
-namespace ThunderWire.Helpers
-{
-    public class RandomHelper
-    {
-        private int _old;
-
-        /// <summary>
-        /// Function to generate List of random integer numbers.
-        /// </summary>
-        public static List<int> RandomList(int min, int max, int count)
-        {
-            return Enumerable.Range(min, max).OrderBy(x => Guid.NewGuid()).Take(count).ToList();
-        }
-
-        /// <summary>
-        /// Function to generate random integer number (No Duplicates).
-        /// </summary>
-        public int Range(int min, int max)
-        {
-            if (min == max)
-                return min;
-
-            Random rnd = new Random();
-            return _old = Enumerable.Range(min, max).OrderBy(x => rnd.Next()).Where(x => x != _old).Take(1).Single();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:dc48ad01fc6426d2cde279aabacb4ec14cd248e686ba3be2dfeb7e1de1c0cb8b
+size 899

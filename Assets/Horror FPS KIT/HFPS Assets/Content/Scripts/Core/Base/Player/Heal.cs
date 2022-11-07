@@ -1,33 +1,3 @@
-﻿using UnityEngine;
-using ThunderWire.Utility;
-
-namespace HFPS.Player
-{
-    public class Heal : MonoBehaviour
-    {
-        public float HealAmout;
-        public AudioClip HealSound;
-        public float HealVolume = 1f;
-
-        public void UseObject()
-        {
-            if (PlayerController.HasReference)
-            {
-                if (PlayerController.Instance.gameObject.HasComponent(out HealthManager health))
-                {
-                    health.ApplyHeal(HealAmout);
-
-                    if (!health.isMaximum)
-                    {
-                        if (HealSound)
-                        {
-                            AudioSource.PlayClipAtPoint(HealSound, transform.position, HealVolume);
-                        }
-
-                        Destroy(gameObject);
-                    }
-                }
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4599dc56d57e64aad21a4cf901de2050c1d15bc80c64e051ae0ecdfeb5957973
+size 898

@@ -1,29 +1,3 @@
-﻿using UnityEngine;
-using HFPS.Player;
-
-namespace HFPS.Systems
-{
-    public class OutOfBoundary : MonoBehaviour
-    {
-        public Vector3 objTeleportOffset;
-
-        private void OnTriggerEnter(Collider other)
-        {
-            if (other.transform.root.GetComponent<PlayerController>())
-            {
-                other.transform.root.GetComponent<HealthManager>().InstantDeath();
-            }
-
-            if (other.transform.GetComponent<InteractiveItem>())
-            {
-                Vector3 pos = other.transform.GetComponent<InteractiveItem>().lastFloorPosition;
-                pos += objTeleportOffset;
-
-                other.transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
-                other.transform.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-
-                other.transform.position = pos;
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9db18e65a512e3f01a53f97e9c7bcbb950eb86f7a434f92b601ddc46b4afb794
+size 908

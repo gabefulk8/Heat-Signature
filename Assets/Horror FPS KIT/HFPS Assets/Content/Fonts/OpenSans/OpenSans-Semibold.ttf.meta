@@ -1,22 +1,3 @@
-fileFormatVersion: 2
-guid: acb726c0002d3b345a8180ca43f069b9
-timeCreated: 1499543304
-licenseType: Store
-TrueTypeFontImporter:
-  serializedVersion: 4
-  fontSize: 30
-  forceTextureCase: -1
-  characterSpacing: 0
-  characterPadding: 1
-  includeFontData: 1
-  fontName: Open Sans
-  fontNames:
-  - Open Sans
-  fallbackFontReferences:
-  - {fileID: 12800000, guid: 3d14237064faabb438ef6f7a27cfafeb, type: 3}
-  customCharacters: 
-  fontRenderingMode: 0
-  ascentCalculationMode: 1
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:2f6b4d5cbf070548a7243605b884f196ca5781b892e306ed47bf8255f3190aa6
+size 525

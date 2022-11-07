@@ -1,17 +1,3 @@
-fileFormatVersion: 2
-guid: 10b257f8230acee41bf69ee03cd26f50
-labels:
-- Shake
-- Camera
-- Follow
-- Animation
-- Effect
-MonoImporter:
-  externalObjects: {}
-  serializedVersion: 2
-  defaultReferences: []
-  executionOrder: 0
-  icon: {instanceID: 0}
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:cec061882f89856a0dec496d973258f6556bf49dc3dc34d457e2fe8bd73b7b5f
+size 298

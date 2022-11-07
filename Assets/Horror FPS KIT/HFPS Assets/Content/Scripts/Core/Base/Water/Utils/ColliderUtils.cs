@@ -1,24 +1,3 @@
-﻿using UnityEngine;
-
-namespace WaterBuoyancy.Collections
-{
-    public static class ColliderUtils
-    {
-        public static bool IsPointInsideCollider(Vector3 point, Collider collider, ref Bounds colliderBounds)
-        {
-            float rayLength = colliderBounds.size.magnitude;
-            Ray ray = new Ray(point, collider.transform.position - point);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit, rayLength))
-            {
-                if (hit.collider == collider)
-                {
-                    return false;
-                }
-            }
-
-            return true;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a9325092625c18adab5e1b256332f98898e7c2d398d706c6b708eb700aa97de0
+size 660

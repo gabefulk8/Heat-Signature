@@ -1,21 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace HFPS.Systems
-{
-    /// <summary>
-    /// Attribute which shows MinMax value slider.
-    /// </summary>
-    [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
-    public class MinMaxAttribute : PropertyAttribute
-    {
-        public float MinValue;
-        public float MaxValue;
-
-        public MinMaxAttribute(float min, float max)
-        {
-            MinValue = min;
-            MaxValue = max;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c8e00286972b7f279511fd2334130cab8170a3a1d71932ee333c92e4d5802ff7
+size 511

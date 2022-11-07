@@ -1,29 +1,3 @@
-#if GRIFFIN
-using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
-using System;
-
-namespace Pinwheel.Griffin.PaintTool
-{
-#if UNITY_EDITOR
-    [InitializeOnLoad]
-#endif
-    public static class GSpawnFilterInitializer
-    {
-#if UNITY_EDITOR
-        [InitializeOnLoadMethod]
-#endif
-        [RuntimeInitializeOnLoadMethod]
-        public static void InitFilters()
-        {
-            List<Type> loadedTypes = GCommon.GetAllLoadedTypes();
-            GSpawnFilter.AllFilters = loadedTypes.FindAll(
-                t => t.IsSubclassOf(typeof(GSpawnFilter)));
-        }
-    }
-}
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:4756ee4a9bb27135388d281919f61e49983d233ee35e30689752d2f0ebb77a7b
+size 676

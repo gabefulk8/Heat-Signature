@@ -1,35 +1,3 @@
-﻿using UnityEditor;
-using UnityEngine;
-using HFPS.Systems;
-
-namespace HFPS.Editors
-{
-    [CustomEditor(typeof(MonoBehaviour), true)]
-    public class ScriptlessDrawer : Editor
-    {
-        private bool hideScriptField;
-
-        private void OnEnable()
-        {
-            hideScriptField = target.GetType().GetCustomAttributes(typeof(Scriptless), false).Length > 0;
-        }
-
-        public override void OnInspectorGUI()
-        {
-            if (hideScriptField)
-            {
-                serializedObject.Update();
-
-                EditorGUI.BeginChangeCheck();
-
-                DrawPropertiesExcluding(serializedObject, "m_Script");
-
-                if (EditorGUI.EndChangeCheck()) serializedObject.ApplyModifiedProperties();
-            }
-            else
-            {
-                base.OnInspectorGUI();
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d8bc7f6d194281d1ff9b087892531be549c06e0bc27c0f046bcb1a2bf5a65339
+size 889

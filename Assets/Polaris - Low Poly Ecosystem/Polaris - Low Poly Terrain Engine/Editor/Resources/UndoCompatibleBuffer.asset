@@ -1,15 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2aedad9cacd3b54996f2e6ef60fcff2, type: 3}
-  m_Name: UndoCompatibleBuffer
-  m_EditorClassIdentifier: 
-  currentBackupName: ~Elevation Painting_2022927184753
+version https://git-lfs.github.com/spec/v1
+oid sha256:8a93a4aeb034f7e71e3004e09c4acf0a96720cad2b55cfd84600eae7f16b803f
+size 464

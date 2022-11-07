@@ -1,34 +1,3 @@
-﻿using UnityEngine;
-using UnityEngine.Events;
-
-namespace HFPS.UI
-{
-    public class TabPanelEvents : MonoBehaviour
-    {
-        public UnityEvent OnCancel;
-        public UnityEvent OnApply;
-
-        public bool canInvoke = true;
-
-        public void SetInvokeEnable(bool state)
-        {
-            canInvoke = state;
-        }
-
-        public void Cancel()
-        {
-            if (canInvoke)
-            {
-                OnCancel?.Invoke();
-            }
-        }
-
-        public void Apply()
-        {
-            if (canInvoke)
-            {
-                OnApply?.Invoke();
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:965870e37dc44c8cf8c036b4582a5ef62acd87cf31442bf0edb1af34d20ef941
+size 653

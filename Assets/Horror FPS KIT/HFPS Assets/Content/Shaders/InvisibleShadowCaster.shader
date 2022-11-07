@@ -1,20 +1,3 @@
-﻿ Shader "Invisible/InvisibleShadowCaster" {
-     SubShader {
-         Tags { 
-             "Queue"="Transparent"
-             "RenderType"="Transparent" 
-         }
-         CGPROGRAM
-         #pragma surface surf Lambert alpha addshadow
- 
-         struct Input {
-             float nothing; // Just a dummy because surf expects something
-         };
- 
-         void surf (Input IN, inout SurfaceOutput o) {
-             o.Alpha = 0;
-         }
-         ENDCG
-     } 
-     FallBack "Diffuse"
- }
+version https://git-lfs.github.com/spec/v1
+oid sha256:ee11e15fdc99c61400820effe9e285f4fbc3ebc55fb6570289efb760ea8623b1
+size 516

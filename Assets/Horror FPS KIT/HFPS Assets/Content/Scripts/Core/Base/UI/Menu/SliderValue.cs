@@ -1,22 +1,3 @@
-﻿using System;
-using UnityEngine;
-using UnityEngine.UI;
-
-namespace HFPS.UI
-{
-	public class SliderValue : MonoBehaviour
-	{
-		public Text ValueText;
-
-		[HideInInspector]
-		public float value;
-
-		void Update()
-		{
-			value = GetComponent<Slider>().value;
-			double a = Math.Round(value, 2);
-			ValueText.text = a.ToString();
-			GetComponent<Slider>().value = (float)a;
-		}
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e3cf3e9e9986d64c7ee7d3bf98feb861a20516a661d7134b5f52515680a0b888
+size 397

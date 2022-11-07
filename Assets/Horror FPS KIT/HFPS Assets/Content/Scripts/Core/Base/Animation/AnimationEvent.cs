@@ -1,29 +1,3 @@
-﻿using System;
-using UnityEngine;
-using UnityEngine.Events;
-
-namespace HFPS.Systems
-{
-    public class AnimationEvent : MonoBehaviour
-    {
-        [Serializable]
-        public sealed class AnimEvents
-        {
-            public string EventCallName;
-            public UnityEvent CallEvent;
-        }
-
-        public AnimEvents[] AnimationEvents;
-
-        public void SendEvent(string CallName)
-        {
-            foreach (var ent in AnimationEvents)
-            {
-                if (ent.EventCallName == CallName)
-                {
-                    ent.CallEvent?.Invoke();
-                }
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:df696c406562ced8fd5cd4f68f1b58b28cfbbb494a89ff5941d8d94fece0bac9
+size 664

@@ -1,21 +1,3 @@
-#if GRIFFIN
-using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-
-namespace Pinwheel.Griffin
-{
-    public class GObjectComparer<T> : IEqualityComparer<T> where T : Object
-    {
-        public bool Equals(T x, T y)
-        {
-            return x.GetInstanceID() == y.GetInstanceID();
-        }
-
-        public int GetHashCode(T obj)
-        {
-            return obj.GetHashCode();
-        }
-    }
-}
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:4fbbf7b2016fec3af054e68f5d66d64834f597c85d675b4898f42e46514d9bd4
+size 452

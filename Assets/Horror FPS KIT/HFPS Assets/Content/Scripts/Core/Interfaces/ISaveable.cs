@@ -1,16 +1,3 @@
-﻿using System.Collections.Generic;
-
-namespace HFPS.Systems
-{
-    public interface ISaveable
-    {
-        Dictionary<string, object> OnSave();
-        void OnLoad(Newtonsoft.Json.Linq.JToken token);
-    }
-
-    public interface ISaveableArmsItem
-    {
-        Dictionary<string, object> OnSave();
-        void OnLoad(Newtonsoft.Json.Linq.JToken token);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e06baf005e210f4a36b11263f74367cbc34485d8aac974bd90979ca60df166e3
+size 376

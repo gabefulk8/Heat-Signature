@@ -1,25 +1,3 @@
-#if GRIFFIN
-using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Callbacks;
-using UnityEditor;
-
-namespace Pinwheel.Griffin.Wizard
-{
-    public static class GUrpPackageImporter
-    {
-        public static void Import()
-        {
-            string packagePath = GEditorSettings.Instance.renderPipelines.GetUrpPackagePath();
-            if (string.IsNullOrEmpty(packagePath))
-            {
-                Debug.Log("URP Support package not found. Please re-install Polaris.");
-                return;
-            }
-
-            AssetDatabase.ImportPackage(packagePath, false);
-        }
-    }
-}
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:422dc001054cd3c2ef814340f6cc58b03fa6cb12d5e00586e10f05fff73748cf
+size 670

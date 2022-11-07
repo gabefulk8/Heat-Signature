@@ -1,33 +1,3 @@
-﻿using System.Collections;
-using UnityEngine;
-
-namespace HFPS.Systems
-{
-    public class Autosave : MonoBehaviour
-    {
-        [SaveableField, HideInInspector]
-        public bool isSaved;
-
-        private SaveGameHandler saveGame;
-
-        void Awake()
-        {
-            saveGame = SaveGameHandler.Instance;
-        }
-
-        void OnTriggerEnter(Collider other)
-        {
-            if (other.CompareTag("Player") && !isSaved)
-            {
-                isSaved = true;
-                StartCoroutine(Save());
-            }
-        }
-
-        private IEnumerator Save()
-        {
-            yield return new WaitUntil(() => isSaved);
-            saveGame.SaveSerializedData(true);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bbac397f91037d8d707833601ab2128caac9eefba26eea2567cdaacd6b45729d
+size 744

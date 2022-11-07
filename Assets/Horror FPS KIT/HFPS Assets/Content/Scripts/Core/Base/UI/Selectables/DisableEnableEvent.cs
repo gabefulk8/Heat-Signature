@@ -1,31 +1,3 @@
-﻿using UnityEngine;
-using UnityEngine.Events;
-
-namespace HFPS.Systems
-{
-    public class DisableEnableEvent : MonoBehaviour
-    {
-        public enum EventOn { Disable, Enable }
-
-        public EventOn eventOn = EventOn.Disable;
-        public UnityEvent m_Event;
-
-        private bool isEnabled = false;
-
-        private void OnDisable()
-        {
-            if (eventOn == EventOn.Disable && isEnabled)
-                m_Event?.Invoke();
-
-            isEnabled = false;
-        }
-
-        private void OnEnable()
-        {
-            if (eventOn == EventOn.Enable && !isEnabled)
-                m_Event?.Invoke();
-
-            isEnabled = true;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1754e2bf2f82eae4c903224030a6b6608ee8fc3db2e7b22339646994026413d8
+size 698

@@ -1,29 +1,3 @@
-﻿/*
- * KeypadButton.cs - by ThunderWire Studio
- * Version 1.0
-*/
-
-using UnityEngine;
-
-namespace HFPS.Systems
-{
-	public class KeypadButton : MonoBehaviour
-	{
-		private Keypad keypad;
-
-		public int number;
-
-		void Start()
-		{
-			keypad = transform.parent.GetComponent<Keypad>();
-		}
-
-		public void UseObject()
-		{
-			if (!keypad.m_accessGranted)
-			{
-				keypad.InsertCode(number);
-			}
-		}
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ce037796747b2aacaa85782c9ea7d756e0a8d686224bdb98ea277a4e4421493f
+size 423

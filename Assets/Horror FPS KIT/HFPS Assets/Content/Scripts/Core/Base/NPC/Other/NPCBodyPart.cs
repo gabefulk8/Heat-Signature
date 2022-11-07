@@ -1,30 +1,3 @@
-﻿/*
- * NPCBodyPart.cs - by ThunderWire Studio
- * ver. 1.0
-*/
-
-using UnityEngine;
-
-namespace HFPS.Systems
-{
-    /// <summary>
-    /// NPC Damage Caller (Sends Damage Event to Main Health script)
-    /// </summary>
-    public class NPCBodyPart : DamageBehaviour
-    {
-        [HideInInspector]
-        public NPCHealth health;
-
-        public bool isHead;
-
-        public override void ApplyDamage(int damageAmount)
-        {
-            health.Damage(isHead ? health.headshotDamage : damageAmount);
-        }
-
-        public override bool IsAlive()
-        {
-            return health.Health > 0;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:07a8cc91e748b9282806fe5544dc8ab5bbc20e28fda7d8156fabe8fef68372bb
+size 644

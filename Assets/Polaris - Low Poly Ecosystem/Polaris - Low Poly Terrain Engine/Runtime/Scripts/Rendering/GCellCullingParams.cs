@@ -1,15 +1,3 @@
-#if GRIFFIN
-using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-
-namespace Pinwheel.Griffin.Rendering
-{
-    public struct GCellCullingParams
-    {
-        public Vector3 boundCenter;
-        public Vector3 boundSize;
-        public int instanceCount;
-    }
-}
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:c5925861c56a23bfb80e3edb0bdfb593c089e38355793ba347308fed72eb9f5e
+size 308
